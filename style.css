@@ -1,0 +1,99 @@
+/* Fontes */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* Cores */
+:root {
+    --cor-principal: #2c3e50;
+    --cor-secundaria: #ecf0f1;
+    --cor-destaque: #e74c3c;
+}
+
+/* Navegação */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor-principal);
+    color: white;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1em 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seções */
+section {
+    padding: 120px 20px 40px 20px;
+}
+
+.apresentacao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* Registros */
+.registro {
+    background-color: var(--cor-secundaria);
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid var(--cor-destaque);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .apresentacao-container {
+        flex-direction: column;
+    }
+}
